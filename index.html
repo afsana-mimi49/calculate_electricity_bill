@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=j, initial-scale=1.0">
+    <title>Electricity Bill</title>
+</head>
+<body>
+    <script>
+        
+
+var units = 183;
+
+if(units<=50){
+    var subtotal = units*0.50;
+
+}
+
+
+
+
+
+else if( units>50 && units<=150){
+    var subtotal = 50*0.50+(units-50)*0.75;
+
+}
+
+
+
+
+else if( units>150 && units<=250){
+    var subtotal = 50*0.50+100*0.75+ (units-150)*1.20;
+
+}
+
+else if( units>250){
+    var subtotal = 50*0.50+100*0.75+ 100*1.20+(units-250)*1.50;
+
+}
+
+var vat = parseInt(subtotal*0.2);
+
+var total = subtotal + vat;
+
+
+document.write("vat: " + vat + "<br>");
+document.write("subtotal: " + subtotal + "<br>");
+
+document.write("TOTAL: " + total );
+
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+</head>
+<body>
+    <h1>Electricity Bill Calculator</h1>
+    <form id="billForm">
+        <label for="units">Enter units consumed:</label>
+        <input type="number" id="units" name="units" required>
+        <button type="button" onclick="calculateBill()">Calculate Bill</button>
+    </form>
+
+    <h2 id="billResult"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
